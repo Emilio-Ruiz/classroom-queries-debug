@@ -15,6 +15,5 @@ class StudentsController < ApplicationController
     @the_student = matching_students.at(0)
 
     render({ :template => "students/show.html.erb" })
-  end
-
+  end 
 end 
