@@ -2,7 +2,7 @@ class DepartmentsController < ApplicationController
   def index
     matching_departments = Department.all
 
-    @list_of_departments = matching_departments.order({ :created_at => :desc })
+    @list_of_department = matching_departments.order({ :created_at => :desc })
 
     render({ :template => "departments/index.html.erb" })
   end

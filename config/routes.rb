@@ -11,9 +11,9 @@ Rails.application.routes.draw do
 
   # Routes for the Course resource:
 
-  # READ
-  get("/courses", { :controller => "courses", :action => "index" })
-  
+  # READ 
+  get("courses/", { :controller => "courses", :action => "index" })
+
   get("/courses/:path_id", { :controller => "courses", :action => "show" })
 
   #------------------------------
